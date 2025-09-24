@@ -17,6 +17,31 @@
 <link rel="dns-prefetch" href="//gemini.google.com">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}html,body{height:100%;overflow:hidden;font-family:'PingFang SC','Microsoft YaHei',sans-serif}body{background:#000;color:#fff;cursor:none}.bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;background:radial-gradient(circle at 25% 25%,#ff006e 0%,transparent 50%),radial-gradient(circle at 75% 75%,#3a86ff 0%,transparent 50%),radial-gradient(circle at 50% 50%,#06ffa5 0%,transparent 50%),linear-gradient(45deg,#000 0%,#1a1a2e 50%,#16213e 100%);animation:bgShift 20s ease infinite}.particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none}.particle{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle 3s infinite}.cursor{position:fixed;width:20px;height:20px;border:2px solid #00ff88;border-radius:50%;pointer-events:none;z-index:9999;transition:all .1s ease;mix-blend-mode:difference}.cursor-trail{position:fixed;width:4px;height:4px;background:#ff0080;border-radius:50%;pointer-events:none;z-index:9998;opacity:.8}.container{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;padding:20px;position:relative;z-index:1}.header{text-align:center;margin-bottom:3vh;animation:glow 3s ease-in-out infinite alternate}.logo{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;background:linear-gradient(45deg,#00ff88,#00d4ff,#ff0080,#ffaa00);background-size:400% 400%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradientText 4s ease infinite;text-shadow:0 0 20px rgba(0,255,136,.5);margin-bottom:.5rem}.subtitle{font-size:clamp(.9rem,2vw,1.2rem);opacity:.8;margin-bottom:1rem;letter-spacing:2px}.lang-switch{position:fixed;top:20px;right:20px;z-index:1000;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);border-radius:25px;padding:5px;display:flex;gap:5px}.lang-btn{background:transparent;color:#fff;border:none;padding:8px 16px;border-radius:20px;font-size:12px;cursor:pointer;transition:all .3s ease;font-weight:500}.lang-btn.active{background:linear-gradient(45deg,#00ff88,#00d4ff);color:#000}.ai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:1000px;width:100%;margin:0 auto}.ai-card{background:rgba(255,255,255,.05);backdrop-filter:blur(15px);border:1px solid rgba(255,255,255,.1);border-radius:15px;padding:20px;text-align:center;transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer;position:relative;overflow:hidden;transform-style:preserve-3d}.ai-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,.1) 50%,transparent 70%);transform:translateX(-100%) translateY(-100%) rotate(30deg);transition:transform .6s}.ai-card:hover::before{transform:translateX(100%) translateY(100%) rotate(30deg)}.ai-card:hover{transform:translateY(-10px) rotateX(5deg) rotateY(5deg);border-color:rgba(0,255,136,.5);box-shadow:0 20px 40px rgba(0,255,136,.2),0 0 20px rgba(0,255,136,.3)}.ai-name{font-size:clamp(1.1rem,2vw,1.4rem);font-weight:700;margin-bottom:8px;background:linear-gradient(45deg,#fff,#00ff88);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.ai-url{font-size:clamp(.7rem,1.5vw,.9rem);color:rgba(255,255,255,.7);margin-bottom:12px;font-family:'Courier New',monospace}.visit-btn{background:linear-gradient(45deg,#00ff88,#00d4ff);border:none;padding:8px 20px;border-radius:20px;color:#000;font-weight:600;font-size:clamp(.8rem,1.5vw,.9rem);cursor:pointer;transition:all .3s ease;position:relative;overflow:hidden}.visit-btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transition:left .5s}.visit-btn:hover::before{left:100%}.visit-btn:hover{background:linear-gradient(45deg,#00d4ff,#ff0080);transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,255,136,.3)}.magnetic{transition:transform .3s cubic-bezier(.23,1,.32,1)}.loading{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10000;display:none}.loading.show{display:block}.spinner{width:40px;height:40px;border:4px solid rgba(0,255,136,.3);border-top:4px solid #00ff88;border-radius:50%;animation:spin 1s linear infinite}@keyframes bgShift{0%,100%{filter:hue-rotate(0deg) brightness(1)}33%{filter:hue-rotate(120deg) brightness(1.2)}66%{filter:hue-rotate(240deg) brightness(.8)}}@keyframes twinkle{0%,100%{opacity:0;transform:scale(1)}50%{opacity:1;transform:scale(1.5)}}@keyframes gradientText{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes glow{0%{filter:drop-shadow(0 0 10px rgba(0,255,136,.3))}100%{filter:drop-shadow(0 0 30px rgba(0,255,136,.8))}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes ripple{to{transform:scale(4);opacity:0}}@media(max-width:768px){.ai-grid{grid-template-columns:repeat(2,1fr);gap:15px}.ai-card{padding:15px}.header{margin-bottom:4vh}.lang-switch{top:10px;right:10px}}@media(max-width:480px){.ai-grid{grid-template-columns:repeat(2,1fr);gap:12px}.ai-card{padding:12px}}@media(orientation:landscape) and (max-height:600px){.container{padding:10px}.header{margin-bottom:2vh}.ai-grid{gap:10px}.ai-card{padding:10px}}.seo-text{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.header {
+  text-align: center;
+  margin-bottom: 3vh;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+.logo-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(0,255,136,.3);
+  transition: all .3s ease;
+  object-fit: cover;
+}
+.logo-img:hover {
+  border-color: #00ff88;
+  box-shadow: 0 0 20px rgba(0,255,136,.5);
+  transform: scale(1.05);
+}
+@media(max-width:768px) {
+  .logo-img {
+    width: 60px;
+    height: 60px;
+  }
+}
 </style>
 </head>
 <body>
@@ -37,8 +62,9 @@
 
 <div class="container">
 <header class="header">
-<h1 class="logo" data-zh="深度思考" data-en="Deep Thinking">深度思考</h1>
-<p class="subtitle" data-zh="AI智能平台导航中心" data-en="AI Platform Navigation Center">AI智能平台导航中心</p>
+  <img src="logo.jpg" alt="深度思考Logo" class="logo-img">
+  <h1 class="logo" data-zh="深度思考" data-en="Deep Thinking">深度思考</h1>
+  <p class="subtitle" data-zh="AI智能平台导航中心" data-en="AI Platform Navigation Center">AI智能平台导航中心</p>
 </header>
 
 <main class="ai-grid">
@@ -223,7 +249,39 @@ updateCursor();
 }
 
 if('serviceWorker' in navigator){
-navigator.serviceWorker.register('data:text/javascript,self.addEventListener("fetch",e=>e.respondWith(fetch(e.request)))');
+    navigator.serviceWorker.register('data:text/javascript,' + encodeURIComponent(`
+        const CACHE_NAME = 'ai-nav-v1';
+        const urlsToCache = [
+            '/',
+            '/index.html',
+            '/log.jpg'
+        ];
+        
+        self.addEventListener('install', event => {
+            event.waitUntil(
+                caches.open(CACHE_NAME)
+                .then(cache => cache.addAll(urlsToCache))
+            );
+        });
+        
+        self.addEventListener('fetch', event => {
+            event.respondWith(
+                caches.match(event.request)
+                .then(response => {
+                    if (response) {
+                        return response;
+                    }
+                    return fetch(event.request);
+                })
+            );
+        });
+    `))
+    .then(registration => {
+        console.log('Service Worker Success');
+    })
+    .catch(error => {
+        console.log('Service Worker Failed:', error);
+    });
 }
 
 window.addEventListener('beforeunload',()=>{
