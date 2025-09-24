@@ -248,42 +248,6 @@ updateCursor();
 },100);
 }
 
-if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('data:text/javascript,' + encodeURIComponent(`
-        const CACHE_NAME = 'ai-nav-v1';
-        const urlsToCache = [
-            '/',
-            '/index.html',
-            '/log.jpg'
-        ];
-        
-        self.addEventListener('install', event => {
-            event.waitUntil(
-                caches.open(CACHE_NAME)
-                .then(cache => cache.addAll(urlsToCache))
-            );
-        });
-        
-        self.addEventListener('fetch', event => {
-            event.respondWith(
-                caches.match(event.request)
-                .then(response => {
-                    if (response) {
-                        return response;
-                    }
-                    return fetch(event.request);
-                })
-            );
-        });
-    `))
-    .then(registration => {
-        console.log('Service Worker Success');
-    })
-    .catch(error => {
-        console.log('Service Worker Failed:', error);
-    });
-}
-
 window.addEventListener('beforeunload',()=>{
 document.body.style.display='none';
 });
