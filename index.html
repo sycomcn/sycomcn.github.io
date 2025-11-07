@@ -2,49 +2,420 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>深度思考 - AI智能平台导航 | ChatGPT Claude Gemini Kimi 文心一言</title>
-<meta name="description" content="深度思考(杭州)有限公司官方AI平台导航，一站式访问ChatGPT、Claude、Gemini、Kimi、文心一言、通义千问、豆包、腾讯元宝、Grok、DeepSeek等主流人工智能平台">
-<meta name="keywords" content="AI平台,人工智能,ChatGPT,Claude,Gemini,Kimi,文心一言,通义千问,豆包,腾讯元宝,Grok,DeepSeek,深度思考">
-<meta property="og:title" content="深度思考 - AI智能平台导航">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>AI智能平台导航 | ChatGPT Claude Gemini Kimi 文心一言</title>
+<meta name="description" content="一站式访问ChatGPT、Claude、Gemini、Kimi、文心一言、通义千问、豆包、腾讯元宝、Grok、DeepSeek等主流人工智能平台">
+<meta name="keywords" content="AI平台,人工智能,ChatGPT,Claude,Gemini,Kimi,文心一言,通义千问,豆包,腾讯元宝,Grok,DeepSeek">
+<meta property="og:title" content="AI智能平台导航">
 <meta property="og:description" content="探索人工智能无限可能，连接全球最先进的AI平台">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://sy.com.cn">
-<link rel="canonical" href="https://sy.com.cn">
 <link rel="icon" type="image/x-icon" href="logo.svg">
 <link rel="shortcut icon" type="image/x-icon" href="logo.svg">
 <link rel="apple-touch-icon" href="logo.svg">
-<link rel="apple-touch-icon-precomposed" href="logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="dns-prefetch" href="//chat.openai.com">
-<link rel="dns-prefetch" href="//claude.ai">
-<link rel="dns-prefetch" href="//gemini.google.com">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%;overflow:hidden;font-family:'PingFang SC','Microsoft YaHei',sans-serif}body{background:#000;color:#fff;cursor:none}.bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-2;background:radial-gradient(circle at 25% 25%,#ff006e 0%,transparent 50%),radial-gradient(circle at 75% 75%,#3a86ff 0%,transparent 50%),radial-gradient(circle at 50% 50%,#06ffa5 0%,transparent 50%),linear-gradient(45deg,#000 0%,#1a1a2e 50%,#16213e 100%);animation:bgShift 20s ease infinite}.particles{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none}.particle{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle 3s infinite}.cursor{position:fixed;width:20px;height:20px;border:2px solid #00ff88;border-radius:50%;pointer-events:none;z-index:9999;transition:all .1s ease;mix-blend-mode:difference}.cursor-trail{position:fixed;width:4px;height:4px;background:#ff0080;border-radius:50%;pointer-events:none;z-index:9998;opacity:.8}.container{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;padding:20px;position:relative;z-index:1}.header{text-align:center;margin-bottom:3vh;animation:glow 3s ease-in-out infinite alternate}.logo{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;background:linear-gradient(45deg,#00ff88,#00d4ff,#ff0080,#ffaa00);background-size:400% 400%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradientText 4s ease infinite;text-shadow:0 0 20px rgba(0,255,136,.5);margin-bottom:.5rem}.subtitle{font-size:clamp(.9rem,2vw,1.2rem);opacity:.8;margin-bottom:1rem;letter-spacing:2px}.lang-switch{position:fixed;top:20px;right:20px;z-index:1000;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);border-radius:25px;padding:5px;display:flex;gap:5px}.lang-btn{background:transparent;color:#fff;border:none;padding:8px 16px;border-radius:20px;font-size:12px;cursor:pointer;transition:all .3s ease;font-weight:500}.lang-btn.active{background:linear-gradient(45deg,#00ff88,#00d4ff);color:#000}.ai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:1000px;width:100%;margin:0 auto}.ai-card{background:rgba(255,255,255,.05);backdrop-filter:blur(15px);border:1px solid rgba(255,255,255,.1);border-radius:15px;padding:20px;text-align:center;transition:all .3s cubic-bezier(.4,0,.2,1);cursor:pointer;position:relative;overflow:hidden;transform-style:preserve-3d}.ai-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,.1) 50%,transparent 70%);transform:translateX(-100%) translateY(-100%) rotate(30deg);transition:transform .6s}.ai-card:hover::before{transform:translateX(100%) translateY(100%) rotate(30deg)}.ai-card:hover{transform:translateY(-10px) rotateX(5deg) rotateY(5deg);border-color:rgba(0,255,136,.5);box-shadow:0 20px 40px rgba(0,255,136,.2),0 0 20px rgba(0,255,136,.3)}.ai-name{font-size:clamp(1.1rem,2vw,1.4rem);font-weight:700;margin-bottom:8px;background:linear-gradient(45deg,#fff,#00ff88);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.ai-url{font-size:clamp(.7rem,1.5vw,.9rem);color:rgba(255,255,255,.7);margin-bottom:12px;font-family:'Courier New',monospace}.visit-btn{background:linear-gradient(45deg,#00ff88,#00d4ff);border:none;padding:8px 20px;border-radius:20px;color:#000;font-weight:600;font-size:clamp(.8rem,1.5vw,.9rem);cursor:pointer;transition:all .3s ease;position:relative;overflow:hidden}.visit-btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transition:left .5s}.visit-btn:hover::before{left:100%}.visit-btn:hover{background:linear-gradient(45deg,#00d4ff,#ff0080);transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,255,136,.3)}.magnetic{transition:transform .3s cubic-bezier(.23,1,.32,1)}.loading{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10000;display:none}.loading.show{display:block}.spinner{width:40px;height:40px;border:4px solid rgba(0,255,136,.3);border-top:4px solid #00ff88;border-radius:50%;animation:spin 1s linear infinite}@keyframes bgShift{0%,100%{filter:hue-rotate(0deg) brightness(1)}33%{filter:hue-rotate(120deg) brightness(1.2)}66%{filter:hue-rotate(240deg) brightness(.8)}}@keyframes twinkle{0%,100%{opacity:0;transform:scale(1)}50%{opacity:1;transform:scale(1.5)}}@keyframes gradientText{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes glow{0%{filter:drop-shadow(0 0 10px rgba(0,255,136,.3))}100%{filter:drop-shadow(0 0 30px rgba(0,255,136,.8))}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes ripple{to{transform:scale(4);opacity:0}}@media(max-width:768px){.ai-grid{grid-template-columns:repeat(2,1fr);gap:15px}.ai-card{padding:15px}.header{margin-bottom:4vh}.lang-switch{top:10px;right:10px}}@media(max-width:480px){.ai-grid{grid-template-columns:repeat(2,1fr);gap:12px}.ai-card{padding:12px}}@media(orientation:landscape) and (max-height:600px){.container{padding:10px}.header{margin-bottom:2vh}.ai-grid{gap:10px}.ai-card{padding:10px}}.seo-text{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  position: fixed;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  cursor: none;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(0, 191, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(0, 255, 127, 0.1) 0%, transparent 50%),
+    #0a0a0a;
+  animation: bgShift 25s ease infinite;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00ff88;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease;
+  mix-blend-mode: difference;
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: #00d4ff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
 .header {
   text-align: center;
-  margin-bottom: 3vh;
-  animation: glow 3s ease-in-out infinite alternate;
+  margin-bottom: 2vh;
 }
+
 .logo-img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 2px solid rgba(0,255,136,.3);
-  transition: all .3s ease;
+  border: 2px solid rgba(0, 255, 136, 0.3);
+  transition: all 0.3s ease;
   object-fit: cover;
+  filter: drop-shadow(0 4px 12px rgba(0, 255, 136, 0.3));
 }
+
 .logo-img:hover {
   border-color: #00ff88;
-  box-shadow: 0 0 20px rgba(0,255,136,.5);
-  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.6);
+  transform: scale(1.08);
 }
-@media(max-width:768px) {
+
+.subtitle {
+  font-size: clamp(0.85rem, 1.8vw, 1.1rem);
+  opacity: 0.7;
+  margin-top: 12px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.lang-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 4px;
+  display: flex;
+  gap: 4px;
+}
+
+.lang-btn {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.lang-btn.active {
+  background: linear-gradient(135deg, #00ff88, #00d4ff);
+  color: #000;
+}
+
+.lang-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ai-card {
+  background: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.ai-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 212, 255, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.ai-card:hover::before {
+  opacity: 1;
+}
+
+.ai-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(0, 255, 136, 0.4);
+  box-shadow: 
+    0 20px 40px rgba(0, 255, 136, 0.15),
+    0 0 30px rgba(0, 255, 136, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.ai-name {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 700;
+  margin-bottom: 6px;
+  background: linear-gradient(135deg, #fff, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.5px;
+}
+
+.ai-url {
+  font-size: clamp(0.7rem, 1.3vw, 0.85rem);
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 14px;
+  font-family: 'Courier New', monospace;
+  font-weight: 400;
+}
+
+.visit-btn {
+  background: linear-gradient(135deg, #00ff88, #00d4ff);
+  border: none;
+  padding: 8px 24px;
+  border-radius: 20px;
+  color: #000;
+  font-weight: 600;
+  font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+.visit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s;
+}
+
+.visit-btn:hover::before {
+  left: 100%;
+}
+
+.visit-btn:hover {
+  background: linear-gradient(135deg, #00d4ff, #00ff88);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 255, 136, 0.4);
+}
+
+.magnetic {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  display: none;
+}
+
+.loading.show {
+  display: block;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 255, 136, 0.2);
+  border-top: 4px solid #00ff88;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes bgShift {
+  0%, 100% { filter: hue-rotate(0deg) brightness(1); }
+  50% { filter: hue-rotate(30deg) brightness(1.1); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes ripple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+/* 平板布局 */
+@media (max-width: 1024px) {
+  .ai-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  
   .logo-img {
     width: 60px;
     height: 60px;
   }
+}
+
+/* 手机横屏 */
+@media (max-width: 768px) {
+  .ai-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+  
+  .ai-card {
+    padding: 16px 12px;
+  }
+  
+  .header {
+    margin-bottom: 1.5vh;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .subtitle {
+    margin-top: 8px;
+  }
+  
+  .lang-switch {
+    top: 12px;
+    right: 12px;
+    padding: 3px;
+  }
+  
+  .lang-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+}
+
+/* 手机竖屏 */
+@media (max-width: 480px) {
+  .ai-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .ai-card {
+    padding: 18px 14px;
+  }
+}
+
+/* 小屏幕横屏优化 */
+@media (orientation: landscape) and (max-height: 600px) {
+  .container {
+    padding: 12px;
+  }
+  
+  .header {
+    margin-bottom: 1vh;
+  }
+  
+  .logo-img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+    margin-top: 6px;
+  }
+  
+  .ai-grid {
+    gap: 10px;
+  }
+  
+  .ai-card {
+    padding: 12px 10px;
+  }
+  
+  .lang-switch {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+.seo-text {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 </style>
 </head>
@@ -55,218 +426,252 @@
 <div class="loading"><div class="spinner"></div></div>
 
 <div class="lang-switch">
-<button class="lang-btn active" onclick="switchLang('zh')">中文</button>
-<button class="lang-btn" onclick="switchLang('en')">EN</button>
+  <button class="lang-btn active" onclick="switchLang('zh')">中文</button>
+  <button class="lang-btn" onclick="switchLang('en')">EN</button>
 </div>
 
 <div class="seo-text">
-<h1>深度思考(杭州)有限公司 - 专业AI平台导航服务</h1>
-<p>提供ChatGPT、Claude、Gemini、Kimi、文心一言、通义千问、豆包、腾讯元宝、Grok、DeepSeek等主流人工智能平台快速访问入口</p>
+  <h1>专业AI平台导航服务</h1>
+  <p>提供ChatGPT、Claude、Gemini、Kimi、文心一言、通义千问、豆包、腾讯元宝、Grok、DeepSeek等主流人工智能平台快速访问入口</p>
 </div>
 
 <div class="container">
-<header class="header">
-  <img src="logo.svg" alt="深度思考Logo" class="logo-img">
-  <h1 class="logo" data-zh="深度思考" data-en="Deep Thinking">深度思考</h1>
-  <p class="subtitle" data-zh="AI智能平台导航中心" data-en="AI Platform Navigation Center">AI智能平台导航中心</p>
-</header>
+  <header class="header">
+    <img src="logo.svg" alt="AI导航Logo" class="logo-img">
+    <p class="subtitle" data-zh="AI智能平台导航中心" data-en="AI Platform Navigation Center">AI智能平台导航中心</p>
+  </header>
 
-<main class="ai-grid">
-<article class="ai-card magnetic" onclick="openLink('https://chatgpt.com/')" data-name="ChatGPT">
-<h2 class="ai-name">ChatGPT</h2>
-<p class="ai-url">chatgpt.com</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+  <main class="ai-grid">
+    <article class="ai-card magnetic" onclick="openLink('https://chatgpt.com/')" data-name="ChatGPT">
+      <h2 class="ai-name">ChatGPT</h2>
+      <p class="ai-url">chatgpt.com</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://claude.ai/')" data-name="Claude">
-<h2 class="ai-name">Claude</h2>
-<p class="ai-url">claude.ai</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://claude.ai/')" data-name="Claude">
+      <h2 class="ai-name">Claude</h2>
+      <p class="ai-url">claude.ai</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://gemini.google.com/')" data-name="Gemini">
-<h2 class="ai-name">Gemini</h2>
-<p class="ai-url">gemini.google.com</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://gemini.google.com/')" data-name="Gemini">
+      <h2 class="ai-name">Gemini</h2>
+      <p class="ai-url">gemini.google.com</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://chat.qwen.ai/')" data-name="通义千问">
-<h2 class="ai-name" data-zh="通义千问" data-en="Alibaba Qianwen">阿里千问</h2>
-<p class="ai-url">chat.qwen.ai</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://chat.qwen.ai/')" data-name="通义千问">
+      <h2 class="ai-name" data-zh="通义千问" data-en="Alibaba Qianwen">通义千问</h2>
+      <p class="ai-url">chat.qwen.ai</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://yuanbao.tencent.com/')" data-name="腾讯元宝">
-<h2 class="ai-name" data-zh="腾讯元宝" data-en="Tencent Yuanbao">腾讯元宝</h2>
-<p class="ai-url">yuanbao.tencent.com</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://yuanbao.tencent.com/')" data-name="腾讯元宝">
+      <h2 class="ai-name" data-zh="腾讯元宝" data-en="Tencent Yuanbao">腾讯元宝</h2>
+      <p class="ai-url">yuanbao.tencent.com</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://chat.deepseek.com/')" data-name="DeepSeek">
-<h2 class="ai-name">DeepSeek</h2>
-<p class="ai-url">chat.deepseek.com</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://chat.deepseek.com/')" data-name="DeepSeek">
+      <h2 class="ai-name">DeepSeek</h2>
+      <p class="ai-url">chat.deepseek.com</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://www.doubao.com/chat/')" data-name="豆包">
-<h2 class="ai-name" data-zh="豆包" data-en="Doubao">豆包</h2>
-<p class="ai-url">doubao.com</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://www.doubao.com/chat/')" data-name="豆包">
+      <h2 class="ai-name" data-zh="豆包" data-en="Doubao">豆包</h2>
+      <p class="ai-url">doubao.com</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://yiyan.baidu.com/')" data-name="文心一言">
-<h2 class="ai-name" data-zh="文心一言" data-en="ERNIE Bot">文心一言</h2>
-<p class="ai-url">yiyan.baidu.com</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://yiyan.baidu.com/')" data-name="文心一言">
+      <h2 class="ai-name" data-zh="文心一言" data-en="ERNIE Bot">文心一言</h2>
+      <p class="ai-url">yiyan.baidu.com</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://www.kimi.com/')" data-name="Kimi">
-<h2 class="ai-name">Kimi</h2>
-<p class="ai-url">www.kimi.com</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://www.kimi.com/')" data-name="Kimi">
+      <h2 class="ai-name">Kimi</h2>
+      <p class="ai-url">www.kimi.com</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
 
-<article class="ai-card magnetic" onclick="openLink('https://grok.x.ai/')" data-name="Grok">
-<h2 class="ai-name">Grok</h2>
-<p class="ai-url">grok.x.ai</p>
-<button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
-</article>
+    <article class="ai-card magnetic" onclick="openLink('https://grok.x.ai/')" data-name="Grok">
+      <h2 class="ai-name">Grok</h2>
+      <p class="ai-url">grok.x.ai</p>
+      <button class="visit-btn" data-zh="探索" data-en="Visit">探索</button>
+    </article>
+  </main>
 </div>
-</main>
 
 <script>
-const cursor=document.querySelector('.cursor');
-const trails=[];
-const trailCount=6;
-const loading=document.querySelector('.loading');
-let currentLang='zh';
-let mouseX=0,mouseY=0,cursorX=0,cursorY=0;
+const cursor = document.querySelector('.cursor');
+const trails = [];
+const trailCount = 6;
+const loading = document.querySelector('.loading');
+let currentLang = 'zh';
+let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
 
-for(let i=0;i<trailCount;i++){
-const trail=document.createElement('div');
-trail.className='cursor-trail';
-document.body.appendChild(trail);
-trails.push({element:trail,x:0,y:0,opacity:1-(i/trailCount)});
+// 创建光标轨迹
+for (let i = 0; i < trailCount; i++) {
+  const trail = document.createElement('div');
+  trail.className = 'cursor-trail';
+  document.body.appendChild(trail);
+  trails.push({ element: trail, x: 0, y: 0, opacity: 1 - (i / trailCount) });
 }
 
-document.addEventListener('mousemove',e=>{
-mouseX=e.clientX;
-mouseY=e.clientY;
+// 鼠标移动
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 });
 
-function updateCursor(){
-cursorX+=(mouseX-cursorX)*.1;
-cursorY+=(mouseY-cursorY)*.1;
-cursor.style.left=cursorX-10+'px';
-cursor.style.top=cursorY-10+'px';
-trails.forEach((trail,index)=>{
-trail.x+=(cursorX-trail.x)*(.1-index*.01);
-trail.y+=(cursorY-trail.y)*(.1-index*.01);
-trail.element.style.left=trail.x-2+'px';
-trail.element.style.top=trail.y-2+'px';
-trail.element.style.opacity=trail.opacity;
-trail.element.style.transform=`scale(${1-index*.1})`;
-});
-requestAnimationFrame(updateCursor);
+// 更新光标位置
+function updateCursor() {
+  cursorX += (mouseX - cursorX) * 0.1;
+  cursorY += (mouseY - cursorY) * 0.1;
+  
+  cursor.style.left = cursorX - 10 + 'px';
+  cursor.style.top = cursorY - 10 + 'px';
+  
+  trails.forEach((trail, index) => {
+    trail.x += (cursorX - trail.x) * (0.1 - index * 0.01);
+    trail.y += (cursorY - trail.y) * (0.1 - index * 0.01);
+    trail.element.style.left = trail.x - 2 + 'px';
+    trail.element.style.top = trail.y - 2 + 'px';
+    trail.element.style.opacity = trail.opacity;
+    trail.element.style.transform = `scale(${1 - index * 0.1})`;
+  });
+  
+  requestAnimationFrame(updateCursor);
 }
 
-const magneticElements=document.querySelectorAll('.magnetic');
-magneticElements.forEach(element=>{
-element.addEventListener('mousemove',e=>{
-const rect=element.getBoundingClientRect();
-const centerX=rect.left+rect.width/2;
-const centerY=rect.top+rect.height/2;
-const deltaX=(e.clientX-centerX)*.15;
-const deltaY=(e.clientY-centerY)*.15;
-element.style.transform=`translate(${deltaX}px,${deltaY}px) rotateX(${deltaY*.1}deg) rotateY(${deltaX*.1}deg)`;
-cursor.style.transform='scale(1.5)';
-cursor.style.borderColor='#ff0080';
-});
-element.addEventListener('mouseleave',()=>{
-element.style.transform='translate(0px,0px) rotateX(0deg) rotateY(0deg)';
-cursor.style.transform='scale(1)';
-cursor.style.borderColor='#00ff88';
-});
-});
-
-document.addEventListener('click',e=>{
-const ripple=document.createElement('div');
-ripple.style.cssText=`position:fixed;left:${e.clientX-25}px;top:${e.clientY-25}px;width:50px;height:50px;border-radius:50%;background:radial-gradient(circle,rgba(0,255,136,.4),transparent);pointer-events:none;z-index:9999;animation:ripple .6s ease-out`;
-document.body.appendChild(ripple);
-setTimeout(()=>ripple.remove(),600);
+// 磁吸效果
+const magneticElements = document.querySelectorAll('.magnetic');
+magneticElements.forEach(element => {
+  element.addEventListener('mousemove', e => {
+    const rect = element.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    const deltaX = (e.clientX - centerX) * 0.15;
+    const deltaY = (e.clientY - centerY) * 0.15;
+    
+    element.style.transform = `translate(${deltaX}px, ${deltaY}px) rotateX(${deltaY * 0.1}deg) rotateY(${deltaX * 0.1}deg)`;
+    cursor.style.transform = 'scale(1.5)';
+    cursor.style.borderColor = '#00d4ff';
+  });
+  
+  element.addEventListener('mouseleave', () => {
+    element.style.transform = 'translate(0px, 0px) rotateX(0deg) rotateY(0deg)';
+    cursor.style.transform = 'scale(1)';
+    cursor.style.borderColor = '#00ff88';
+  });
 });
 
-function createParticles(){
-const particles=document.querySelector('.particles');
-const count=window.innerWidth<768?20:30;
-for(let i=0;i<count;i++){
-const particle=document.createElement('div');
-particle.className='particle';
-particle.style.left=Math.random()*100+'%';
-particle.style.top=Math.random()*100+'%';
-particle.style.animationDelay=Math.random()*3+'s';
-particle.style.animationDuration=(Math.random()*3+2)+'s';
-particles.appendChild(particle);
-}
-}
-
-function openLink(url){
-loading.classList.add('show');
-cursor.style.transform='scale(.8)';
-setTimeout(()=>{
-cursor.style.transform='scale(1)';
-loading.classList.remove('show');
-},300);
-window.open(url,'_blank','noopener,noreferrer');
-}
-
-function switchLang(lang){
-currentLang=lang;
-document.querySelectorAll('.lang-btn').forEach(btn=>btn.classList.remove('active'));
-event.target.classList.add('active');
-document.querySelectorAll('[data-zh]').forEach(el=>{
-el.textContent=el.getAttribute(`data-${lang}`);
+// 点击波纹效果
+document.addEventListener('click', e => {
+  const ripple = document.createElement('div');
+  ripple.style.cssText = `
+    position: fixed;
+    left: ${e.clientX - 25}px;
+    top: ${e.clientY - 25}px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.4), transparent);
+    pointer-events: none;
+    z-index: 9999;
+    animation: ripple 0.6s ease-out;
+  `;
+  document.body.appendChild(ripple);
+  setTimeout(() => ripple.remove(), 600);
 });
-if(lang==='en'){
-document.title='Deep Thinking - AI Platform Navigation | ChatGPT Claude Gemini Kimi ERNIE';
-document.querySelector('meta[name="description"]').content='Deep Thinking Co., Ltd. official AI platform navigation, one-stop access to ChatGPT, Claude, Gemini, Kimi, ERNIE Bot, Grok, DeepSeek and other mainstream AI platforms';
-document.documentElement.lang='en';
-}else{
-document.title='深度思考 - AI智能平台导航 | ChatGPT Claude Gemini Kimi 文心一言';
-document.querySelector('meta[name="description"]').content='深度思考(杭州)有限公司官方AI平台导航，一站式访问ChatGPT、Claude、Gemini、Kimi、文心一言、通义千问、豆包、腾讯元宝、Grok、DeepSeek等主流人工智能平台';
-document.documentElement.lang='zh-CN';
-}
+
+// 创建粒子
+function createParticles() {
+  const particles = document.querySelector('.particles');
+  const count = window.innerWidth < 768 ? 15 : 25;
+  
+  for (let i = 0; i < count; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.top = Math.random() * 100 + '%';
+    particle.style.animationDelay = Math.random() * 3 + 's';
+    particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+    particles.appendChild(particle);
+  }
 }
 
-document.addEventListener('keydown',e=>{
-if(e.key==='Tab'){
-document.body.style.cursor='default';
-cursor.style.display='none';
-}
-});
-
-document.addEventListener('mousemove',()=>{
-document.body.style.cursor='none';
-cursor.style.display='block';
-});
-
-document.addEventListener('contextmenu',e=>e.preventDefault());
-
-if('requestIdleCallback' in window){
-requestIdleCallback(()=>{
-createParticles();
-updateCursor();
-});
-}else{
-setTimeout(()=>{
-createParticles();
-updateCursor();
-},100);
+// 打开链接
+function openLink(url) {
+  loading.classList.add('show');
+  cursor.style.transform = 'scale(0.8)';
+  
+  setTimeout(() => {
+    cursor.style.transform = 'scale(1)';
+    loading.classList.remove('show');
+  }, 300);
+  
+  window.open(url, '_blank', 'noopener,noreferrer');
 }
 
-window.addEventListener('beforeunload',()=>{
-document.body.style.display='none';
+// 切换语言
+function switchLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  document.querySelectorAll('[data-zh]').forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+  
+  if (lang === 'en') {
+    document.title = 'AI Platform Navigation | ChatGPT Claude Gemini Kimi ERNIE';
+    document.querySelector('meta[name="description"]').content = 'One-stop access to ChatGPT, Claude, Gemini, Kimi, ERNIE Bot, Grok, DeepSeek and other mainstream AI platforms';
+    document.documentElement.lang = 'en';
+  } else {
+    document.title = 'AI智能平台导航 | ChatGPT Claude Gemini Kimi 文心一言';
+    document.querySelector('meta[name="description"]').content = '一站式访问ChatGPT、Claude、Gemini、Kimi、文心一言、通义千问、豆包、腾讯元宝、Grok、DeepSeek等主流人工智能平台';
+    document.documentElement.lang = 'zh-CN';
+  }
+}
+
+// 键盘Tab键处理
+document.addEventListener('keydown', e => {
+  if (e.key === 'Tab') {
+    document.body.style.cursor = 'default';
+    cursor.style.display = 'none';
+  }
 });
+
+document.addEventListener('mousemove', () => {
+  document.body.style.cursor = 'none';
+  cursor.style.display = 'block';
+});
+
+// 禁用右键菜单
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+// 防止触摸滑动
+document.addEventListener('touchmove', e => {
+  if (e.touches.length > 1) {
+    e.preventDefault();
+  }
+}, { passive: false });
+
+// 初始化
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(() => {
+    createParticles();
+    updateCursor();
+  });
+} else {
+  setTimeout(() => {
+    createParticles();
+    updateCursor();
+  }, 100);
+}
 </script>
 </body>
 </html>
