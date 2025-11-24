@@ -22,7 +22,7 @@
     <meta property="twitter:description" content="发现全球最好的AI工具。一站式访问ChatGPT、Claude、Gemini等主流平台。">
     <meta property="twitter:image" content="logo.jpg">
 
-    <link rel="icon" type="image/x-icon" href="logo.svg">
+    <link rel="icon" type="image/x-icon" href="favicon_dt.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -173,17 +173,16 @@
         }
 
         .logo-container {
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             margin: 0 auto 16px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            box-shadow: var(--shadow-md);
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid var(--glass-border);
             position: relative;
+            background: transparent;
+            border: none;
+            box-shadow: none;
         }
 
         .theme-toggle {
@@ -331,9 +330,10 @@
         }
 
         .logo-img {
-            width: 50px;
-            height: 50px;
+            width: 100%;
+            height: 100%;
             object-fit: contain;
+            filter: drop-shadow(0 10px 15px rgba(37, 99, 235, 0.2));
         }
 
         h1 {
@@ -746,7 +746,7 @@
     <div class="container">
         <header>
             <div class="logo-container">
-                <img src="logo.svg" alt="Logo" class="logo-img">
+                <img src="logo_dt.svg" alt="Logo" class="logo-img">
             </div>
             <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
                 <svg class="sun-icon" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"
