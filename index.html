@@ -805,7 +805,8 @@
             <button class="tab-btn" onclick="filterCategory('video')">视频 & 音乐</button>
             <button class="tab-btn" onclick="filterCategory('dev')">编程 & 开发</button>
             <button class="tab-btn" onclick="filterCategory('work')">办公 & 写作</button>
-            <button class="tab-btn" onclick="filterCategory('fun')">娱乐 & 角色</button>
+            <button class="tab-btn" onclick="filterCategory('fun')">娱乐 & 聊天</button>
+            <button class="tab-btn" onclick="filterCategory('recommend')">其他推荐</button>
             <button class="tab-btn" onclick="filterCategory('fav')">⭐ 我的收藏</button>
         </div>
 
@@ -944,7 +945,20 @@
 
             // --- Fun & Chat ---
             { name: "Character.ai", url: "https://beta.character.ai/", desc: "与各种虚拟角色对话，沉浸式角色扮演。支持群聊与语音通话，社区活跃，角色丰富多样。", category: "fun", icon: "🎭", tags: ["聊天", "角色", "娱乐"], badge: "hot" },
-            { name: "Replika", url: "https://replika.com/", desc: "你的 AI 伴侣，关心你的情感与生活。支持 AR 模式与语音通话，提供全天候的情感陪伴。", category: "fun", icon: "❤️", tags: ["伴侣", "情感", "聊天"] }
+            { name: "Replika", url: "https://replika.com/", desc: "你的 AI 伴侣，关心你的情感与生活。支持 AR 模式与语音通话，提供全天候的情感陪伴。", category: "fun", icon: "❤️", tags: ["伴侣", "情感", "聊天"] },
+
+            // --- Other Recommendations ---
+            { name: "Altern", url: "https://altern.ai", desc: "发现最佳 AI 工具，AI 工具界的 App Store。", category: "recommend", icon: "🔍", tags: ["工具", "发现", "精选"] },
+            { name: "AI For Developers", url: "https://aifordevelopers.org", desc: "AI 开发者工具列表，程序员的 AI 武器库。", category: "recommend", icon: "🛠️", tags: ["开发", "工具", "编程"] },
+            { name: "Best of AI", url: "https://github.com/best-of-ai/best-of-ai", desc: "AI 界的米其林指南，最优质的 AI 资源收录。", category: "recommend", icon: "🏆", tags: ["精选", "指南", "优质"] },
+            { name: "Awesome AI Models", url: "https://github.com/dariubs/awesome-ai-models", desc: "顶尖 AI 模型与 LLM 精选列表，模型控必看。", category: "recommend", icon: "🧠", tags: ["模型", "LLM", "资源"] },
+            { name: "Awesome AI Coding Tools", url: "https://github.com/ai-for-developers/awesome-ai-coding-tools", desc: "AI 编程工具精选，提升开发效率的神器集合。", category: "recommend", icon: "💻", tags: ["编程", "效率", "工具"] },
+            { name: "Awesome Vibe Coding", url: "http://github.com/dariubs/awesome-vibe-coding", desc: "Vibe Coding 工具与资源，探索新一代编程体验。", category: "recommend", icon: "✨", tags: ["编程", "创新", "体验"] },
+            { name: "There's An AI", url: "https://theresanai.com", desc: "AI 的头版头条，发现最新、最有趣的 AI 应用。", category: "recommend", icon: "📰", tags: ["资讯", "应用", "发现"] },
+            { name: "Awesome AI Books", url: "https://github.com/mahseema/aibooks", desc: "顶尖 AI 与机器学习书籍精选，系统学习 AI 的最佳书单。", category: "recommend", icon: "📚", tags: ["书籍", "学习", "教程"] },
+            { name: "AI for Productivity", url: "https://productivity.directory/category/ai", desc: "AI 生产力工具精选，让工作效率飞起来。", category: "recommend", icon: "🚀", tags: ["生产力", "办公", "效率"] },
+            { name: "Workflow Automation", url: "https://productivity.directory/category/workflow-automation", desc: "工作流自动化软件精选，释放双手，自动执行。", category: "recommend", icon: "⚙️", tags: ["自动化", "工作流", "效率"] },
+            { name: "Top AI Directories", url: "https://github.com/best-of-ai/ai-directories", desc: "最佳 AI 导航站收录，一站式找到所有 AI 资源。", category: "recommend", icon: "📂", tags: ["导航", "资源", "收录"] }
         ];
 
         // State
